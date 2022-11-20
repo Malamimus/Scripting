@@ -12,17 +12,17 @@ public class NPC : MonoBehaviour
     void Start()
     {
         health += level;
-        print("Здоровье: " + health);
+        print("Г‡Г¤Г®Г°Г®ГўГјГҐ: " + health);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Создаём переменную вида Vector3 и сохраняем в неё позицию NPC
+
         Vector3 newPosition = transform.position;
-        //Меняем позицию NPC по оси z согласно скорости NPC и времени между кадрами
+
         newPosition.z += speed * Time.deltaTime;
-        //Меняем позицию NPC на новое значение, рассчитанное выше
+ 
         transform.position = newPosition;
     }
 }
